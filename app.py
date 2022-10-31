@@ -15,7 +15,7 @@ def config():
     file_path = "./components/img/"
     img = Image.open(os.path.join(file_path, 'logo.ico'))
     st.set_page_config(page_title='COVID-DASHBOARD', page_icon=img, layout="wide", initial_sidebar_state="expanded")
-st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Dentsu-logo_black.svg/2560px-Dentsu-logo_black.svg.png', width=250)
+
     
     
     # code to check turn of setting and footer
@@ -186,6 +186,7 @@ def other_tab():
 
 def main():
     config()
+    st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Dentsu-logo_black.svg/2560px-Dentsu-logo_black.svg.png', width=250)
     st.header("COVID-19 DASHBOARD")
     menu = ["COVID-19 DATA"]
     choice = st.selectbox("", menu)
